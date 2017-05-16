@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="48dp"
+    android:paddingTop="100dp"
+    android:paddingRight="48dp"
+    android:paddingBottom="100dp"
+    android:background="@color/colorLogin2"
+    tools:context="com.example.moviles.midtermprojectandroid.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/editText"
+            android:hint="@string/user"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/editText"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/editText"
+            android:hint="@string/pwd"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/passwordVerification"
+            style="@style/editText"
+            android:hint="@string/re_pwd"
+            android:inputType="textPassword" />
+
+        </LinearLayout>
+</RelativeLayout>

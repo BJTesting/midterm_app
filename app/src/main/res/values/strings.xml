@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Project X</string>
+    <!-- Login interface -->
+    <!-- Buttons -->
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_pwd">Forgot your password?</string>
+
+    <!-- Hints -->
+    <string name="user">Username</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="re_pwd">Repeat Password</string>
+</resources>
