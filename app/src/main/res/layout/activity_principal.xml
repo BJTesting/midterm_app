@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="48dp"
+    android:paddingTop="60dp"
+    android:paddingRight="48dp"
+    android:paddingBottom="100dp"
+    android:background="@color/colorLogin2"
+    tools:context="com.example.moviles.midtermprojectandroid.SignUp">
+
+
+
+    <TextView
+        android:id="@+id/Bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenid@"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_light"
+
+        />
+
+    <ImageButton
+        android:id="@+id/Informacion"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Bienvenida"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/info" />
+
+    <TextView
+        android:id="@+id/TeInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Informacion"
+        android:layout_marginTop="10dp"
+        android:text="Información"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+    <ImageButton
+        android:id="@+id/Inscribir"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Bienvenida"
+        android:layout_toEndOf="@+id/Informacion"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/participa"
+
+
+        />
+    <TextView
+        android:id="@+id/TeInscribir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Inscribir"
+        android:layout_toEndOf="@+id/TeInformacion"
+        android:layout_toRightOf="@+id/TeInformacion"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Participa"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+    <ImageButton
+        android:id="@+id/Crea"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/TeInformacion"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/crea"
+
+        />
+    <TextView
+        android:id="@+id/TeCrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Crea"
+        android:layout_marginTop="10dp"
+        android:text="Crea Evento"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+    <ImageButton
+        android:id="@+id/Dona"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/TeInscribir"
+        android:layout_toEndOf="@+id/Crea"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/dona"
+        />
+    <TextView
+        android:id="@+id/TeDona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dona"
+        android:layout_toEndOf="@+id/TeCrea"
+        android:layout_toRightOf="@+id/TeCrea"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:text="Dona"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+
+
+</RelativeLayout>
