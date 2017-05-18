@@ -50,7 +50,7 @@
             style="@style/button_sign_up"/>
 
         <Button
-            android:id="@+id/textView"
+            android:id="@+id/forgot_pwd"
             android:text="@string/forgot_pwd"
             style="@style/button_forgot_pwd"/>
 
