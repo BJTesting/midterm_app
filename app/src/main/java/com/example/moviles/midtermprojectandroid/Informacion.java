@@ -45,8 +45,6 @@ public class Informacion extends AppCompatActivity{
             }
         });
 
-        ActionBar actionBar= getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

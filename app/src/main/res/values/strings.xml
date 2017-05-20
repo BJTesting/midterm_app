@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Project X</string>
+    <string name="app_name">EducApp</string>
     <!-- Login interface -->
     <!-- Buttons -->
     <string name="log_in">Log In</string>

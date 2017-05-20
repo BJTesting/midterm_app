@@ -25,34 +25,34 @@
         android:id="@+id/NombreEven"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/TituloC"
         android:text="Nombres del Evento:"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:textColor="@android:color/background_light"
 
-        />
+        android:layout_below="@+id/TituloC"
+        android:layout_alignParentStart="true" />
     <EditText
         android:id="@+id/etNombreEven"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_below="@+id/NombreEven"
-        android:background="@android:color/background_light"
-        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        style="@style/editText"
+        android:layout_marginTop="17dp"
 
-        />
+        android:layout_below="@+id/NombreEven"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/FechaEven"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/etNombreEven"
         android:text="Fecha del Evento:"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="26dp"
         android:textColor="@android:color/background_light"
 
-        />
+        android:layout_below="@+id/etNombreEven"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/etFecha"
@@ -63,25 +63,26 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        style="@style/editText"
         android:inputType="date" />
 
     <TextView
         android:id="@+id/Direccion"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/etFecha"
         android:text="Dirección:"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="21dp"
         android:textColor="@android:color/background_light"
 
-        />
+        android:layout_below="@+id/etFecha"
+        android:layout_alignParentStart="true" />
     <EditText
         android:id="@+id/etDireccion"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/Direccion"
-        android:background="@android:color/background_light"
+        style="@style/editText"
         android:layout_marginTop="20dp"
 
         />
@@ -90,9 +91,10 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
+        style="@style/button_log_in"
         android:text="Guardar"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/etFecha" />
 
 
 </RelativeLayout>

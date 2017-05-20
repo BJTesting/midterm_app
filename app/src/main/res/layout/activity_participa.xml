@@ -121,10 +121,10 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
         android:text="Registrar"
-
-        />
+        style="@style/button_log_in"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 

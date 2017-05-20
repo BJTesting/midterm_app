@@ -11,7 +11,6 @@
     android:background="@color/colorLogin2"
     tools:context="com.example.moviles.midtermprojectandroid.SignUp">
 
-
     <TextView
         android:id="@+id/TituloD"
         android:layout_width="match_parent"
@@ -39,24 +38,25 @@
         android:id="@+id/etNumTar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/NumTar"
         android:layout_below="@+id/NumTar"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="number" />
+        style="@style/editText"
+        android:inputType="number"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/Ven"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/etNumTar"
         android:text="Vencimiento"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="17dp"
         android:textColor="@android:color/background_light"
 
-        />
+        android:layout_below="@+id/etNumTar"
+        android:layout_alignParentStart="true" />
     <EditText
         android:id="@+id/etVen"
         android:layout_width="wrap_content"
@@ -66,6 +66,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        style="@style/editText"
         android:inputType="date" />
 
     <TextView
@@ -83,12 +84,13 @@
         android:id="@+id/etcvv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/CVV"
         android:layout_toRightOf="@+id/CVV"
         android:layout_below="@+id/etVen"
         android:ems="10"
+        style="@style/editText"
         android:layout_marginTop="30dp"
-        android:inputType="date" />
+        android:inputType="date"
+        android:layout_alignEnd="@+id/etVen" />
 
 
     <TextView
@@ -98,6 +100,7 @@
         android:layout_below="@+id/etcvv"
         android:text="Monto"
         android:textSize="20dp"
+
         android:layout_marginTop="30dp"
         android:textColor="@android:color/background_light"
 
@@ -111,6 +114,7 @@
         android:layout_below="@+id/etcvv"
         android:ems="10"
         android:layout_marginTop="30dp"
+        style="@style/editText"
         android:inputType="date" />
 
     <Button
@@ -118,9 +122,12 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
+        style="@style/button_log_in"
         android:text="Donar"
-        />
+
+        android:layout_below="@+id/etmonto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 
 
 

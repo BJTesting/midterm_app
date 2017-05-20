@@ -7,7 +7,7 @@
     android:paddingStart="48dp"
     android:paddingTop="40dp"
     android:paddingRight="48dp"
-    android:paddingBottom="100dp"
+    android:paddingBottom="20dp"
     android:background="@color/colorLogin2"
     tools:context="com.example.moviles.midtermprojectandroid.SignUp">
 
@@ -20,8 +20,7 @@
         android:layout_marginTop="10dp"
         android:text="Información"
         android:textSize="30dp"
-        android:textColor="@android:color/background_light"
-        />
+        android:textColor="@android:color/background_light"/>
 
     <TextView
         android:id="@+id/NombreInfo"
@@ -31,21 +30,18 @@
         android:text="Nombres:"
         android:textSize="20dp"
         android:layout_marginTop="30dp"
-        android:textColor="@android:color/background_light"
-
-        />
+        android:textColor="@android:color/background_light"/>
 
     <TextView
         android:id="@+id/ApellidoInfo"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/NombreInfo"
         android:text="Apellidos:"
         android:textSize="20dp"
-        android:layout_marginTop="25dp"
         android:textColor="@android:color/background_light"
+        android:layout_alignTop="@+id/etApellidoInfo"
+        android:layout_alignParentStart="true" />
 
-        />
     <EditText
         android:id="@+id/etNombreInfo"
         android:layout_width="match_parent"
@@ -53,10 +49,9 @@
         android:layout_below="@+id/TituloF"
         android:layout_toEndOf="@+id/NombreInfo"
         android:layout_toRightOf="@+id/NombreInfo"
-        android:background="@android:color/background_light"
-        android:layout_marginTop="30dp"
+        style="@style/editText"
+        android:layout_marginTop="30dp" />
 
-        />
     <EditText
         android:id="@+id/etApellidoInfo"
         android:layout_width="match_parent"
@@ -64,41 +59,40 @@
         android:layout_below="@+id/etNombreInfo"
         android:layout_toEndOf="@+id/ApellidoInfo"
         android:layout_toRightOf="@+id/ApellidoInfo"
-        android:background="@android:color/background_light"
-        android:layout_marginTop="25dp"
-
-        />
+        style="@style/editText"
+        android:layout_marginTop="25dp" />
 
     <TextView
         android:id="@+id/Curso"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/ApellidoInfo"
         android:text="Cursos a Enseñar:"
         android:textSize="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="33dp"
         android:textColor="@android:color/background_light"
-
-        />
+        android:layout_below="@+id/ApellidoInfo"
+        android:layout_alignEnd="@+id/btnGuardar" />
 
     <EditText
         android:id="@+id/etCurso"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="150dp"
+        style="@style/editTextArea"
         android:layout_below="@+id/Curso"
-        android:background="@android:color/background_light"
-        android:layout_marginTop="10dp"
-
-        />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
 
     <Button
         android:id="@+id/btnGuardar"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
+        style="@style/button_log_in"
         android:text="Guardar"
-        />
+
+        android:layout_below="@+id/etCurso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
 
 
 

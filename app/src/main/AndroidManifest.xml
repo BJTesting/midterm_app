@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/education"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/education"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Informacion"
+        <activity
+            android:name=".Informacion"
             android:label="Informacion"
             android:parentActivityName=".Principal">
             <intent-filter>
@@ -27,45 +28,48 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dona"
+        <activity
+            android:name=".Dona"
             android:label="Dona">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Principal"/>
+                android:value=".Principal" />
+
             <intent-filter>
                 <action android:name="android.intent.action.Dona" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Crea"
+        <activity
+            android:name=".Crea"
             android:label="Crea">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Principal"/>
+                android:value=".Principal" />
+
             <intent-filter>
                 <action android:name="android.intent.action.Crea" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Participa"
+        <activity
+            android:name=".Participa"
             android:label="Participa">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Principal"/>
+                android:value=".Principal" />
+
             <intent-filter>
                 <action android:name="android.intent.action.Participa" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SignUp" />
         <activity android:name=".LogIn" />
         <activity android:name=".Principal" />
-        <activity android:name=".Profile" />
     </application>
 
 </manifest>
