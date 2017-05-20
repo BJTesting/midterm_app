@@ -18,10 +18,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Informacion"
+            android:label="Informacion"
+            android:parentActivityName=".Principal">
+            <intent-filter>
+                <action android:name="android.intent.action.Informacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dona"
+            android:label="Dona">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Principal"/>
+            <intent-filter>
+                <action android:name="android.intent.action.Dona" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Crea"
+            android:label="Crea">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Principal"/>
+            <intent-filter>
+                <action android:name="android.intent.action.Crea" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Participa"
+            android:label="Participa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Principal"/>
+            <intent-filter>
+                <action android:name="android.intent.action.Participa" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".SignUp" />
         <activity android:name=".LogIn" />
         <activity android:name=".Principal" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Profile" />
     </application>
 
 </manifest>
