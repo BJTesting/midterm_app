@@ -28,21 +28,21 @@
             app:srcCompat="@drawable/leaf" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/usernameEmail"
             style="@style/editText"
             android:hint="@string/user"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress|textPersonName" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/passwordLogIn"
             style="@style/editText"
             android:hint="@string/pwd"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/log_in"
-            android:text="@string/log_in"
-            style="@style/button_log_in"/>
+            style="@style/button_log_in"
+            android:text="@string/log_in" />
 
         <Button
             android:id="@+id/sign_up"

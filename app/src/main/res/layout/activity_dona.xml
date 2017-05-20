@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="48dp"
+    android:paddingTop="30dp"
+    android:paddingRight="48dp"
+    android:paddingBottom="40dp"
+    android:background="@color/colorLogin2"
+    tools:context="com.example.moviles.midtermprojectandroid.SignUp">
+
+
+    <TextView
+        android:id="@+id/TituloD"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Ayudanos, Dona"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light"
+        />
+
+
+    <TextView
+        android:id="@+id/NumTar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/TituloD"
+        android:text="Numero de Tarjeta:"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/background_light"
+
+        />
+
+    <EditText
+        android:id="@+id/etNumTar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NumTar"
+        android:layout_below="@+id/NumTar"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Ven"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etNumTar"
+        android:text="Vencimiento"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/background_light"
+
+        />
+    <EditText
+        android:id="@+id/etVen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Ven"
+        android:layout_below="@+id/Ven"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/CVV"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etVen"
+        android:text="CVV2:"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/background_light"
+
+        />
+    <EditText
+        android:id="@+id/etcvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/CVV"
+        android:layout_toRightOf="@+id/CVV"
+        android:layout_below="@+id/etVen"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:inputType="date" />
+
+
+    <TextView
+        android:id="@+id/Monto"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etcvv"
+        android:text="Monto"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/background_light"
+
+        />
+    <EditText
+        android:id="@+id/etmonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Monto"
+        android:layout_toRightOf="@+id/Monto"
+        android:layout_below="@+id/etcvv"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="Donar"
+        />
+
+
+
+    </RelativeLayout>
