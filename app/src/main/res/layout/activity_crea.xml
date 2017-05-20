@@ -32,7 +32,15 @@
         android:textColor="@android:color/background_light"
 
         />
+    <EditText
+        android:id="@+id/etNombreEven"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/NombreEven"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="20dp"
 
+        />
 
 
     </RelativeLayout>
