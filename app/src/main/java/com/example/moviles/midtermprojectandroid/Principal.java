@@ -7,14 +7,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Principal extends AppCompatActivity implements View.OnClickListener {
-
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        final TextView welcome = (TextView) findViewById(R.id.Bienvenida);
+        intent = getIntent();
+        String username = intent.getStringExtra("username");
+        String aux = welcome.getText().toString();
+        welcome.setText(aux+", "+username);
+
         ImageButton btnDonar= (ImageButton) findViewById(R.id.Dona);
         btnDonar.setOnClickListener(this);
 
