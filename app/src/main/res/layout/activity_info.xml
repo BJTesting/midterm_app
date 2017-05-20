@@ -100,17 +100,6 @@
         android:text="Guardar"
         />
 
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:layout_toEndOf="@+id/btnGuardar"
-        android:layout_toRightOf="@+id/btnGuardar"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="50dp"
-        android:text="Regresar"
 
-        />
 
 </RelativeLayout>
