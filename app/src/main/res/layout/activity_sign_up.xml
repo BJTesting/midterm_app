@@ -20,7 +20,7 @@
         android:layout_alignParentStart="true">
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/username"
             style="@style/editText"
             android:hint="@string/user"
             android:inputType="textPersonName" />
@@ -43,5 +43,9 @@
             android:hint="@string/re_pwd"
             android:inputType="textPassword" />
 
+        <Button
+            android:id="@+id/register"
+            android:text="@string/register"
+            style="@style/button_sign_up"/>
         </LinearLayout>
 </RelativeLayout>

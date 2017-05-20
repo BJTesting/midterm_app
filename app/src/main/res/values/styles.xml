@@ -28,7 +28,7 @@
     </style>
 
     <style name="button_log_in">
-        <item name="android:background">@drawable/custom_btn_login</item>
+        <item name="android:background">@drawable/custom_btn</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">5dp</item>
@@ -39,7 +39,7 @@
     </style>
 
     <style name="button_sign_up">
-        <item name="android:background">@drawable/custom_btn_login</item>
+        <item name="android:background">@drawable/custom_btn</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">5dp</item>
@@ -49,7 +49,7 @@
     </style>
 
     <style name="button_forgot_pwd">
-        <item name="android:background">@drawable/custom_btn_pwd</item>
+        <item name="android:background">@drawable/custom_btn_fgt_pwd</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
 
