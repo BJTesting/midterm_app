@@ -30,25 +30,39 @@ public class Principal extends AppCompatActivity implements View.OnClickListener
         btnInfo.setOnClickListener(this);
 
         ImageButton btnCrea= (ImageButton) findViewById(R.id.Crea);
-        btnInfo.setOnClickListener(this);
+        btnCrea.setOnClickListener(this);
 
         ImageButton btnPart= (ImageButton) findViewById(R.id.Inscribir);
-        btnInfo.setOnClickListener(this);
+        btnPart.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent= new Intent(Principal.this,Dona.class);
-        startActivity(intent);
+        switch (v.getId()){
+            case R.id.Dona:
+                Intent intent= new Intent(Principal.this,Dona.class);
+                startActivity(intent);
+             break;
+            case R.id.Informacion:
+                Intent intent1=new Intent(Principal.this,Informacion.class);
+                startActivity(intent1);
+             break;
+            case R.id.Crea:
+                Intent intent2 = new Intent(Principal.this,Crea.class);
+                startActivity(intent2);
+             break;
+            case R.id.Inscribir:
+                Intent intent3= new Intent(Principal.this,Participa.class);
+                startActivity(intent3);
+             break;
+        }
 
-        Intent intent1=new Intent(Principal.this,Informacion.class);
-        startActivity(intent1);
 
-        Intent intent2 = new Intent(Principal.this,Crea.class);
-        startActivity(intent2);
 
-        Intent intent3= new Intent(Principal.this,Participa.class);
-        startActivity(intent3);
+
+
+
+
     }
 
 }

@@ -12,7 +12,6 @@ public class Dona extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dona);
 
-        ActionBar actionBar= getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
     }
 }
