@@ -11,7 +11,7 @@ import java.util.Map;
  */
 
 public class LogInRequest extends StringRequest {
-    private static final String LOGIN_URL = "http://192.168.1.104/PHP/Login.php";
+    private static final String LOGIN_URL = "https://midtermexam.000webhostapp.com/Login.php";
     private Map<String, String> params;
 
     public LogInRequest(String username, String email, String password, Response.Listener<String> listener){
